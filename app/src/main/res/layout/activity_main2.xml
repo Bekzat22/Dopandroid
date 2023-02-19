@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pers"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="29dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="73dp"
+        android:layout_marginStart="29dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/newbsc"
+        android:elevation="2dp"
+        android:layout_marginTop="185dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="34dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
+        android:background="@drawable/style"
+        android:layout_marginTop="280dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/layout"
+            android:text="Bycicle"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="42sp"
+            app:layout_constraintStart_toStartOf="@id/layout"
+            app:layout_constraintEnd_toEndOf="@id/layout"
+            android:layout_marginEnd="103dp"
+            android:layout_marginTop="158dp"
+            android:layout_marginStart="108dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="234dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@id/layout"
+            app:layout_constraintStart_toStartOf="@id/layout"
+            app:layout_constraintTop_toTopOf="@id/layout"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/black"
+            android:elevation="2dp"
+            app:layout_constraintStart_toStartOf="@id/button"
+            app:layout_constraintTop_toTopOf="@id/button"
+            android:layout_marginStart="79dp"
+            android:layout_marginEnd="79dp"
+            android:layout_marginTop="11dp"
+            android:drawablePadding="36dp"
+            app:layout_constraintEnd_toEndOf="@id/button"
+            android:drawableStart="@drawable/minus"
+            android:drawableEnd="@drawable/plus"
+            android:textSize="22sp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
